@@ -9,7 +9,7 @@ body {
   --red: #E71D36;
   --orange: #FF9F1C;
   --white-overlay: rgba(253, 255, 252, 0.8);
-  background-color: var(--background);
+  background-color: var(--blue);
   font-family: 'Roboto', sans-serif;
   color: var(--white);
   --navbar-height: 60px;
