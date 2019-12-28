@@ -7,14 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "install-all": "npm run install:config",
     "install:config": "npm i",
-    "audit-fix": "npm run audit-fix:config && npm run audit-fix:navbar && npm run audit-fix:people && npm run audit-fix:planets && npm run audit-fix:fetchWithCache",
+    "audit-fix": "npm run audit-fix:config",
     "start": "concurrently --kill-others --kill-others-on-fail -p name --names \"config,common-deps\" \"npm run start:config\" \"npm run start:common-deps\"",
     "start:config": "webpack-dev-server --config ./webpack.config.config.dev.js --port 8233",
     "start:common-deps": "webpack-dev-server --config ./webpack.common-deps.config.dev.js --port 8234",
     "build": "npm run build:config && npm run build:common-deps",
     "build:config": "webpack --config ./webpack.config.config.js -p",
     "build:common-deps": "webpack --config ./webpack.common-deps.config.js -p",
-    "audit-fix:config": "npm audit fix",
+    "audit-fix:config": "npm audit fix"
   },
   "author": "Hudson Graham",
   "license": "ISC",
@@ -30,7 +30,7 @@
     "copy-webpack-plugin": "4.5.2",
     "css-loader": "1.0.0",
     "style-loader": "0.23.0",
-    "webpack": "4.17.1",
+    "webpack": "^4.41.5",
     "webpack-cli": "3.1.0",
     "webpack-dev-server": "^3.1.14"
   }
