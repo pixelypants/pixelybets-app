@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- 8.9
+deploy:
+  provider: s3
+  access_key_id: AKIAJQA766P2RW32RWLA
+  secret_access_key: 
+    secure: TmWtSMheCnCAWqQTIa2vwG0kMfpsfY0oq4gsTCqKHIqHyoY12YGPAtzeY1Ld6LxYcekUxnrSiBzAVgr5debK5bstwOyLK6jxfAo8Ib+Jhzlx1NjXqOnpkUftMZaoKCqLZd8WoSDnRDNnxm0kR/mhmGIBBXJc+a7JS2UGsfUPOUPuwr8Sw1OKmxzuI0VNxPY/s8BaIEBSKs+c3PvLkZPQlz2SnT5RCSgRbfwvubQBjWrjiMeXHYVVvMcIpAQzLCxpaYF382AO06QjK037OoRustDF62U+Z7j/vxAH72N/xof/1Oz/oj6fCmBr5F6UpASEzmE4oG7MW+Yeo9bDHoGdoudhjNwxaDMJb5iAdJ0QwIEj6kHHmOnkVJI6af3pr3ZmK4zCLq74XV+pvsU/k2FA1wMANpsh/75D+C0YHHSiroJZ/waYjp1dUAn+GhoVcrfv+nur1WCr0qFEtEvJHQl5uydKAKxA/Nn41eV8NE+SJgvWrQdyVsBxbjGorabcJKh11yt4MK4a0U7oDTg4iCj0NpYjDwmFltg8L3HT8TjqeznhPURWqIuJyihHVEyONrjas3YsOHLTkxciZmuLkoQBW2W/OsbTJdUFYMIiMF30Kvd9lHwOsYbgPAl2GzHWSi2Q0SMZM+bDcpJR1mNazjiWrXC0akcWth2FxMrf/NmLqns=
+  bucket: pixelybets-app
+  skip_cleanup: true
+  local_dir: build
+  install:
+    - install-all
+  script:
+    - yarn build
+
