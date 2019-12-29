@@ -10,10 +10,10 @@ export function navbar(location) {
   return true
 }
 
-export function people(location) {
-  return prefix(location, 'people')
+export function sports(location) {
+  return prefix(location, 'sports')
 }
 
-export function planets(location) {
-  return prefix(location, 'planets')
+export function racing(location) {
+  return prefix(location, 'racing')
 }
