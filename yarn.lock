@@ -657,6 +657,16 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@codewithdan/observable-store-extensions@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@codewithdan/observable-store-extensions/-/observable-store-extensions-2.2.3.tgz#d2e668eefbc3347fb55b22619ff68a6f2530a66d"
+  integrity sha512-4Vql/ZQSFQY+7cnQcg5o0/9JUW0Nx3Kj8ESlbhbo8ZzaosUhCwaqVQd302OpQpuin5B+MjCMOIdRDN/LoWZHuQ==
+
+"@codewithdan/observable-store@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@codewithdan/observable-store/-/observable-store-2.2.3.tgz#6d3ef20716aa886161f256211ec9ac106d97a83a"
+  integrity sha512-rpZ2Ds8wXfupnkB7nPFhNcWvuPFeXxP6L1PdNhu6CtVd5acYtNgYSJ1ndLRYhSCmfhbo3CF9gHS9o5Hjn0pfkA==
+
 "@types/events@*":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"

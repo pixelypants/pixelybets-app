@@ -18,7 +18,10 @@
   },
   "author": "Hudson Graham",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@codewithdan/observable-store": "^2.2.3",
+    "@codewithdan/observable-store-extensions": "^2.2.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/plugin-syntax-dynamic-import": "7.0.0",
