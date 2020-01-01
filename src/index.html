@@ -6,10 +6,8 @@
     <meta name="viewport"
           content="width=device-width" />
     <title></title>
-  </head>
-
-  <body>
-
+    <meta name="importmap-type"
+          content="systemjs-importmap">
     <script type="systemjs-importmap">
       {
         "imports": {
@@ -20,6 +18,9 @@
         }
       }
     </script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js"></script>
+
     <script src='https://unpkg.com/systemjs@4.1.0/dist/system.js'></script>
     <script src='https://unpkg.com/systemjs@4.1.0/dist/extras/amd.js'></script>
     <script src='https://unpkg.com/systemjs@4.1.0/dist/extras/named-exports.js'></script>
@@ -33,12 +34,21 @@
       System.import('@portal/config')
     </script>
 
+  </head>
+
+  <body>
+
     <!-- Static navbar -->
     <link rel="stylesheet"
           href="./styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto"
           rel="stylesheet">
+
+    <!-- optionally include the UI for import map overrides -->
+    <import-map-overrides-full></import-map-overrides-full>
+
     <div id='navbar'>
+
     </div>
 
   </body>
