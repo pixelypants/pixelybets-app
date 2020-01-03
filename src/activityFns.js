@@ -10,6 +10,10 @@ export function navbar(location) {
   return true
 }
 
+export function betslip(location) {
+  return true
+}
+
 export function sports(location) {
   return prefix(location, 'sports')
 }

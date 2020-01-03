@@ -3,5 +3,6 @@ import * as singleSpa from 'single-spa'
 
 singleSpa.registerApplication('navbar', () => SystemJS.import('@portal/navbar'), isActive.navbar)
 singleSpa.registerApplication('sports', () => SystemJS.import('@portal/sports'), isActive.sports)
+singleSpa.registerApplication('betslip', () => SystemJS.import('@portal/betslip'), isActive.betslip)
 
 singleSpa.start()

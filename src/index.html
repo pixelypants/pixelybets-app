@@ -13,7 +13,9 @@
         "imports": {
           "@portal/config": "./config.js",
           "@portal/sportsStore": "https://pixelybets-store-sports.s3-ap-southeast-2.amazonaws.com/SportsStore.js",
+          "@portal/betslipStore": "https://pixelybets-store-betslip.s3-ap-southeast-2.amazonaws.com/BetslipStore.js",
           "@portal/navbar": "https://pixelybets-mfe-navbar.s3-ap-southeast-2.amazonaws.com/navbar.js",
+          "@portal/betslip": "https://pixelybets-mfe-betslip.s3-ap-southeast-2.amazonaws.com/betslip.js",
           "@portal/sports": "https://pixelybets-mfe-sports.s3-ap-southeast-2.amazonaws.com/sports.js",
           "@portal/fetchWithCache": "https://pixelybets-service-fetchwithcache.s3-ap-southeast-2.amazonaws.com/fetchWithCache.js"
         }
@@ -46,12 +48,10 @@
           rel="stylesheet">
 
     <!-- optionally include the UI for import map overrides -->
-    <import-map-overrides-full></import-map-overrides-full>
+    <import-map-overrides-full />
 
-    <div id='navbar'>
-
-    </div>
-
+    <div id='navbar'></div>
+    <div id='betslip'></div>
   </body>
 
 </html>
