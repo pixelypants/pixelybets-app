@@ -6,6 +6,18 @@
     <meta name="viewport"
           content="width=device-width" />
     <title></title>
+
+    <style>
+      .flex-container {
+        display: flex;
+      }
+
+      .flex-container>div {
+        margin: 10px;
+        padding: 20px;
+      }
+    </style>
+
     <meta name="importmap-type"
           content="systemjs-importmap">
     <script type="systemjs-importmap">
@@ -51,7 +63,11 @@
     <import-map-overrides-full />
 
     <div id='navbar'></div>
-    <div id='betslip'></div>
+    <div class="flex-container">
+      <div id='sports'></div>
+      <div id='betslip'></div>
+    </div>
+
   </body>
 
 </html>
