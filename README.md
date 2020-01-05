@@ -1,18 +1,39 @@
-# pixelybets-app
+# pixelybets-app      [![Build Status](https://travis-ci.com/pixelypants/pixelybets-app.svg?branch=master)](https://travis-ci.com/pixelypants/pixelybets-app)
 
 * Using single-spa you can create a micro service front-end and enable multiple 
 applications to work in concert in a unified experience.
 * Each MFE has a seperate pipeline (github > travis ci > AWS S3)
 * ObservableStore (https://github.com/danwahlin/observable-store) has been added to service the need for cross MFE comms (Think BFFs on the Client)
 
-## Coding standards disclaimer: 
-This project is a work in progress and is focused on learning the big picture concepts of MFEs and not low level syntax (e.g. code standards and consistency have not been given any attention yet)
 
 ## Full architecture outlined: 
 https://github.com/pixelypants/pixelybets-app/blob/master/MFE_Architecture_Jan2020.pdf
 
 
-=============================
+## Coding standards disclaimer: 
+This project is a work in progress and is focused on learning the big picture concepts of MFEs and not low level syntax (e.g. code standards and consistency have not been given any attention yet)
+
+
+## Roadmap		
+						
+Integrate framework agnostic component lib
+https://github.com/pixelypants/pixely-ui
+
+Add service worker for PWA caching
+https://developers.google.com/web/tools/workbox
+
+Use Rollup for a new MFE to learn how it works
+https://github.com/rollup/rollup
+
+
+## External applications
+
+1. pixelybets-mfe-navbar - https://github.com/pixelypants/pixelybets-mfe-navbar
+2. pixelybets-mfe-sports - https://github.com/pixelypants/pixelybets-mfe-sports
+3. pixelybets-mfe-betslip - https://github.com/pixelypants/pixelybets-mfe-betslip
+4. pixelybets-store-betslip - https://github.com/pixelypants/pixelybets-store-betslip
+5. pixelybets-store-sports - https://github.com/pixelypants/pixelybets-store-sports
+
 
 ## Technologies
 1. [single-spa](https://single-spa.js.org/)
@@ -26,14 +47,6 @@ npm 6.1.0
 1. Clone the repo
 3. run `yarn start`
 4. Open running code at `http://localhost:8233/`
-
-## External applications
-1. pixelybets-mfe-navbar - https://github.com/pixelypants/pixelybets-mfe-navbar
-2. pixelybets-mfe-sports - https://github.com/pixelypants/pixelybets-mfe-sports
-3. pixelybets-mfe-betslip - https://github.com/pixelypants/pixelybets-mfe-betslip
-4. pixelybets-store-betslip - https://github.com/pixelypants/pixelybets-store-betslip
-5. pixelybets-store-sports - https://github.com/pixelypants/pixelybets-store-sports
-
 
 # Notes
 
