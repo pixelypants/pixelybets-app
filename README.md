@@ -5,7 +5,8 @@ applications to work in concert in a unified experience.
 * Each MFE has a seperate pipeline (github > travis ci > AWS S3)
 * ObservableStore (https://github.com/danwahlin/observable-store) has been added to service the need for cross MFE comms (Think BFFs on the Client)
 
-Full architecture outlined: https://github.com/pixelypants/pixelybets-app/blob/master/MFE_Architecture_Jan2020.pdf
+## Full architecture outlined: 
+https://github.com/pixelypants/pixelybets-app/blob/master/MFE_Architecture_Jan2020.pdf
 
 =============================
 
@@ -31,5 +32,7 @@ npm 6.1.0
 
 
 # Notes
+
+I reverse engineered Justin McMurdies single-spa-portal-example (https://gitlab.com/TheMcMurder/single-spa-portal-example) to learn how a MFE architecture works in the real world.
 
 Please see: https://gitlab.com/TheMcMurder/single-spa-portal-example/blob/master/README.md
