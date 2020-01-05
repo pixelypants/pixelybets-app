@@ -5,8 +5,12 @@ applications to work in concert in a unified experience.
 * Each MFE has a seperate pipeline (github > travis ci > AWS S3)
 * ObservableStore (https://github.com/danwahlin/observable-store) has been added to service the need for cross MFE comms (Think BFFs on the Client)
 
+# Coding standards disclaimer: 
+This project is a work in progress and is focused on learning the big picture concepts of MFEs and not low level syntax (e.g. code standards and consistency have not been given any attention yet)
+
 ## Full architecture outlined: 
 https://github.com/pixelypants/pixelybets-app/blob/master/MFE_Architecture_Jan2020.pdf
+
 
 =============================
 
